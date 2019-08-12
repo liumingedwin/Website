@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>明镜止水</title>
+<script>
+function Show()
+{
+    document.getElementById("Menu1").hidden=document.getElementById("Menu1").hidden?false:true;
+    
+}
+function show2()
+{
+document.getElementById('frontWindow').hidden=false;document.getElementById('App1').hidden=false;
+document.getElementById("Menu1").hidden=true;
+}
+function close2()
+{
+
+setTimeout("document.getElementById('frontWindow').hidden=true;document.getElementById('App1').hidden=true;",100);
+}
+</script>
+<style type="text/css">
+#Menu1{
+    -webkit-border-radius: 8px;
+border-radius: 8px;
+/*设计窗体外框的外阴影特效*/
+-webkit-box-shadow: 0 2px 16px #000,
+0 0 1px #000,
+0 0 1px #000;
+box-shadow: 0 2px 16px #000,
+0 0 1px #000,
+0 0 1px #000;
+/*设计晕边效果*/
+text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+margin-left:0px;
+    margin-top:10%;
+    position:absolute;
+    height:75%;
+    width:30%;
+    background: rgba(178, 215, 255, 100);
+    z-index:10;
+    font: 20px "Segoe UI", Tahoma, sans-serif;
+    color:white;
+}
+html,body {/*页面样式定制,清除边距,显示定义高度*/
+padding: 0;
+margin: 0;
+height: 100%;
+}
+#desktop {/*定制桌面背景效果*/
+background:url("../images/辉夜.jpeg");
+height: 100%;
+font: 12px "Segoe UI", Tahoma, sans-serif;
+position: relative;
+-webkit-box-shadow: inset 0 -200px 100px #032b5c,
+inset -100px 100px 100px #2073b5,
+inset 100px 200px 100px #1f9bb1;
+overflow: hidden;
+}
+#startmenu {/*设置任务栏效果*/
+position:absolute;
+bottom: 0;
+height: 40px;
+width: 100%;
+background: rgba(178,215,255,0.25);
+-webkit-box-shadow: 0 -2px 20px rgba(0,0,0,0.25);
+box-shadow: 0 -2px 20px rgba(0,0,0,0.25),
+inset 0 1px #042754,
+inset 0 2px #5785b0;
+overflow: hidden;
+}
+#startmenu botton {
+font-size: 1.6em;
+color: #fff;
+text-shadow: 1px 2px 2px #00294b;
+}
+#startmenu #winflag {
+float: left;
+margin: 2px;
+height: 34px;
+width: 34px;
+margin-right: 10px;
+border: none;
+background: #034a76;
+-webkit-border-radius: 40px;
+border-radius: 40px;
+-webkit-box-shadow: 0 0 1px #fff,
+0 0 3px #000,
+0 0 3px #000;
+box-shadow: 0 0 1px #fff,
+0 0 3px #000,
+0 0 3px #000,
+inset 0 1px #fff,
+inset 0 12px rgba(255,255,255,0.15),
+inset 0 4px 10px #cef,
+inset 0 22px 5px #0773b4,
+inset 0 -5px 10px #0df;
+}
+#startmenu .application {/*设计任务栏图标样式*/
+position: relative;
+botton: 1px;
+height: 38px;
+width: 52px;
+background: rgba(14, 59, 103, 0325);
+border: 1px solid rgba(0, 0, 0, 0.8);
+/*设置渐变特效*/
+-webkit-transition: .3s all;
+border-radius: 4px;
+box-shadow: inset 0 0 1px #fff,
+inset 4px 4px 20px rgba(255, 255, 255, 0.33),
+inset -2px -2px 10px rgba(255, 255, 255, 0.25);
+}
+#startmenu .application:hover { background-color: rgba(255, 255, 255, 0.25);}
+/*设计窗口外框效果*/
+.window {
+/*定位窗体大小和位置*/
+position: absolute;
+left: 10px;
+top: 10px;
+width: 90%;
+height: 85%;
+padding: 7px;
+/*设计半透明度效果的边框和背景效果*/
+border: 1px solid rgba(255, 255, 255, 0.6);
+background: rgba(178, 215, 255, 0.75);
+/*设计窗体外框圆角显示*/
+-webkit-border-radius: 8px;
+border-radius: 8px;
+/*设计窗体外框的外阴影特效*/
+-webkit-box-shadow: 0 2px 16px #000,
+0 0 1px #000,
+0 0 1px #000;
+box-shadow: 0 2px 16px #000,
+0 0 1px #000,
+0 0 1px #000;
+/*设计晕边效果*/
+text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+}
+a {text-decoration:none;color:black;}
+.window span { margin:1px;}
+.window input {/*文本输入框样式*/
+/*设计文本输入框圆角显示*/
+-webkit-border-radius: 2px;
+-webkit-box-shadow: 0 0 2px #fff,
+0 0 1px #fff;
+box-shadow: 0 0 2px #fff,
+0 0 1px #fff,
+inset 0 0 3px #fff;
+}
+.window input + input { margin-left: 12px;}
+.window.secondary {/*定位第二个窗体位置和不透明度*/
+left: 0px;
+top: 0px;
+opacity: 0.66;
+}
+.window.secondary span { margin-bottom: 85px; }
+/*设计窗口内文本区域样式*/
+.window.content {
+padding: 0px;
+height: 279px;
+background: #fff;
+border: 1px solid #000;
+/*设计文本区域圆角显示*/
+-webkit-border-radius: 2px;
+border-radius: 2px;
+/*设计文本区域的内外阴影特效*/
+-webkit-box-shadow: 0 0 5px #fff,
+0 0 1px #fff;
+box-shadow: 0 0 5px #fff,
+0 0 1px #fff,
+inset 0 1px 2px #aaa;
+text-shadow: none;/*取消文本阴影*/
+}
+.close:hover {background:red;}
+</style>
+</head>
+<body>
+<div id="Menu1" hidden>
+<span>开始菜单</span>
+<div id=app style="font: 10px 'Segoe UI', Tahoma, sans-serif;">
+<a href="#" onclick="show2()">App 1</a>
+</div>
+</div>
+<div id="desktop">
+<a onclick="show2()">
+<img width=50 height=50 src="browser.png"/>
+<p style="margin:0px;">&nbsp;&nbsp;浏览器</p>
+</a>
+<div id="bgWindow" class="window secondary" hidden>
+<span>对话框</span>
+<div class="content"></div>
+</div>
+<div id="frontWindow" class="window" hidden>
+
+<span style="height:80%;width:80%">浏览器</span><b id=space></b><code style="text-align:right;" ><a class="close" id=aa1 onclick="close2()"><strong id=XX style="font-weight:normal;font-size:19px;">×</strong></a></code><br />
+<script>
+function spa()
+{
+    var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight; 
+var str=" ";
+w=w/100*24.8;
+    for (var i=0;i<w;i++)
+    str=str+"&nbsp;";
+    document.getElementById("space").innerHTML=str;
+}
+function spb()
+{
+    document.getElementById("winContent").innerHTML="&lt;iframe src='http://baidu.com/'>";
+}
+window.onload=spa();
+</script>
+<div id="winInput" hidden><input type="text" value="姓名"/><input type="text" value="联系方式"/></div>
+<div id="winContent" class="content"></div>
+</div>
+<div id="startmenu">
+<div id="winflag1" onclick="Show()"><img id=winflag src="winpng.png" width=20 height=10 ></img></div>
+<span id="toolBtn">
+<button class="application" id="App1" onclick="document.getElementById('frontWindow').hidden=document.getElementById('frontWindow').hidden?false:true;" hidden><img src="browser.png" width=30 height=30/></button>
+<button class="application" onclick="spb" hidden><img src="b.png" width=20 height=20/></button>
+<button class="application"hidden><img src="c.png" width=20 height=20/></button>
+<button class="application" hidden><img src="d.png" width=20 height=20/></button>
+</span>
+</div>
+</div>
+
+</body>
+</html>
